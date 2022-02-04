@@ -16,18 +16,3 @@ def run_query(query):
     print(response.json()['data'])
     return response.json()
 
-
-# define the query
-query = """
-{
-      listUsers{
-        items{
-          name
-          availability
-          email
-          createdAt
-        }
-      }
-    }
-    """
-run_query(query)
