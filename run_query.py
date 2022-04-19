@@ -13,6 +13,4 @@ def run_query(query):
         json={'query': query}
     )
     print(f'Response code: {response.status_code}')
-    print(response.json()['data'])
     return response.json()
-
