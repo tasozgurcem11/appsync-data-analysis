@@ -1,17 +1,20 @@
 from run_query import run_query
 import pandas as pd
 
-# define the query
-query: str = """
-{
-      listUsers{
-        items{
-          name
-          availability
-          email
-          createdAt
+
+if __name__ == "__main__":
+    # define the query
+    query: str = """
+    {
+          listUsers{
+            items{
+              name
+              availability
+              email
+              createdAt
+            }
+          }
         }
-      }
-    }
-    """
-run_query(query)
+        """
+    response = run_query(query)
+    print(response)

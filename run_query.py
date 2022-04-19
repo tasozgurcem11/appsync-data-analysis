@@ -3,6 +3,11 @@ from credentials import *
 
 
 def run_query(query):
+    """
+    This function runs APPSYNC query and returns the results as JSON.
+    :param query:
+    :return:
+    """
     # start a session
     session = requests.Session()
 
